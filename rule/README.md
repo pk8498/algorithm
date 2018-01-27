@@ -1,1 +1,1 @@
-* find a rule algorithm
+rule algorithms
