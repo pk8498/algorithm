@@ -60,7 +60,7 @@ public class MedianFinder {
             long lastValue = FIRST_VALUE;
             for (int i=1; i<arraySize; i++) {
                 lastValue = (lastValue * a + b) % DIVISOR;
-                pushQueue(lastValue);
+                pushToQueue(lastValue);
                 long median = maxQueue.peek();
                 totalMedian += median;
             }
@@ -69,7 +69,7 @@ public class MedianFinder {
 
     }
 
-    public static void pushQueue(Long value) {
+    public static void pushToQueue(Long value) {
         if(maxQueue.size() == minQueue.size()) {
             maxQueue.add(value);
         } else {
