@@ -76,7 +76,7 @@ public class MedianFinder {
             minQueue.add(value);
         }
 
-        if (!maxQueue.isEmpty() && !minQueue.isEmpty() && !(maxQueue.peek() <= minQueue.peek())) {
+        if (!maxQueue.isEmpty() && !minQueue.isEmpty() && maxQueue.peek() > minQueue.peek()) {
             long a = maxQueue.peek();
             long b = minQueue.peek();
 
