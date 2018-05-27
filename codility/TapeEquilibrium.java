@@ -9,8 +9,6 @@ public class TapeEquilibrium {
 
     public int solution(int[] A) {
 
-
-        int minValue = Integer.MAX_VALUE;
         int totalSum = 0;
         for (int i=0; i<A.length; i++) {
             totalSum += A[i];
@@ -18,6 +16,7 @@ public class TapeEquilibrium {
 
         int frontSum = 0;
 
+        int minValue = Integer.MAX_VALUE;
         for(int p=1; p<A.length; p++) {
 
             int value = A[p-1];
