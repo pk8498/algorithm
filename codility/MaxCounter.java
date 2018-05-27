@@ -24,9 +24,7 @@ public class MaxCounter {
 
                 ++countArray[X-1];
 
-                if (countArray[X-1] > tempMax) {
-                    tempMax = countArray[X-1];
-                }
+                tempMax = Math.max(tempMax, countArray[X-1]);
             } else if (X == (N + 1)) {
                 max = tempMax;
             }
