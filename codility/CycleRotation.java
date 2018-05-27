@@ -47,7 +47,7 @@ public class CycleRotation {
         CycleRotation cycleRotation = new CycleRotation();
         int[] actualArray = cycleRotation.solution(A, K);
 
-        if(actualArray != expectedArray) {
+        if (!Arrays.equals(actualArray, expectedArray)) {
             new RuntimeException("failed test. actualArray: " + Arrays.toString(actualArray)
                     + ", expectedArray: " + Arrays.toString(expectedArray) + ", A: "
                     + Arrays.toString(A) + ", K: " + K);
