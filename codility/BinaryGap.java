@@ -17,16 +17,16 @@ public class BinaryGap {
         int maxLength = 0;
         while(matcher.find()) {
             int length = matcher.group().length();
-            if (maxLength < length) {
+            if (length > maxLength) {
                 maxLength = length;
             }
         }
 
-        if(maxLength != 0) {
-            maxLength -= 1;
+        if(maxLength == 0) {
+            return maxLength;
         }
 
-        return maxLength;
+        return maxLength-1;
     }
 
     public static void main(String[] args){

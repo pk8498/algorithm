@@ -10,23 +10,23 @@ public class CycleRotation {
 
     public int[] solution(int[] A, int K) {
 
-        int arrLength =  A.length;
-        if(arrLength == 0) {
+        int length =  A.length;
+        if(length == 0) {
             return A;
         }
 
-        int remainder = K % arrLength;
+        int remainder = K % length;
         if(remainder == 0) {
             return A;
         }
 
-        int[] array = new int[arrLength];
+        int[] array = new int[length];
 
 
-        for (int i=0; i<arrLength; i++) {
+        for (int i=0; i<length; i++) {
             int index = i + remainder;
-            if(index >= arrLength) {
-                index -= arrLength;
+            if(index >= length) {
+                index -= length;
             }
 
             array[index] = A[i];
