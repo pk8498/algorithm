@@ -1,2 +1,2 @@
 # Alagorithm
-* personal algorithm practice repo
+* algorithm practice repo
