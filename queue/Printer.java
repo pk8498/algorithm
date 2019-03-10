@@ -5,6 +5,10 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 프린터
+ * https://programmers.co.kr/learn/courses/30/lessons/42587/
+ */
 public class Printer {
 
     public int solution(int[] priorities, int location) {
