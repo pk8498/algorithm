@@ -18,20 +18,13 @@ public class PhoneBook {
             phoneBookSet.remove(prefix);
 
             for (String phoneNumber : phoneBookSet) {
-                if(isContainsPrefix(phoneNumber, prefix)) {
+                if(phoneNumber.startsWith(prefix)) {
                     return false;
                 }
             }
         }
 
         return true;
-    }
-
-    private boolean isContainsPrefix(String phoneNumber, String prefix){
-        if(phoneNumber.equals(prefix)) {
-            return false;
-        }
-        return phoneNumber.startsWith(prefix);
     }
 
     public static void main(String[] args){
